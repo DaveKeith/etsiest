@@ -1,0 +1,130 @@
+body{
+  background-color: #f1f1eb;
+}
+.etsy{
+  margin: 0px;
+  height: 1700px;
+  font-family: sans-serif;
+  width: 1000px;
+}
+ul{
+  padding-left: 0px;
+}
+li{
+  list-style-type: none;
+}
+.header{
+  width: 100%;
+  background-color: white;
+  height: 125px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.company{
+  font-family: serif;
+  color: orangered;
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-right: 10px;
+  width: 10%;
+  font-size: 250%;
+  display: inline-block;
+  text-align: right;
+}
+.search{
+  padding-left: 0px;
+  display: inline-block;
+}
+.top_categories{
+  border-top: 1px solid lightgrey;
+  background-color: white;
+  width: inherit;
+  border-bottom: 2px solid lightgrey;
+}
+.top_category{
+  display: inline-block;
+  padding: 8px;
+  color: grey;
+}
+.sidebar{
+  width: 20%;
+  display: inline-block;
+}
+.out_of_box{
+  padding-bottom: 8px;
+  font-size: small;
+}
+.in_the_box{
+  background-color: white;
+  float: left;
+  border: 1px solid lightgrey;
+  font-size: small;
+  width: 98%;
+}
+.all_cat{
+  padding: 5px;
+}
+.side_categories{
+  padding-left: 15px;
+}
+.side_category{
+  padding: 5px;
+  color: teal;
+}
+.main_content_header{
+  padding-left: 10px;
+  font-family: serif;
+}
+.main_content{
+  font-size: large;
+  display: inline-block;
+  text-align: left;
+  height: 1500px;
+  width: 780px;
+  float: right;
+}
+.images{
+  padding-top: 8px;
+}
+.img_block{
+  background: white;
+  width: 230px;
+  height: 230px;
+  display: inline-block;
+  font-family: serif;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  border: 1px solid lightgrey;
+}
+.img_block img{
+  width: 229px;
+  height: 179px;
+  margin-left: 0.25px;
+  margin-right: 0.25px;
+}
+.img_title{
+  float: left;
+  font-size: small;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  height: 14px;
+  margin: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+.shop{
+  float: left;
+  font-size: small;
+  color: silver;
+  font-family: sans-serif;
+  margin: 5px;
+}
+.price{
+  float: right;
+  font-size: small;
+  color: yellowgreen;
+  margin: 5px;
+  font-family: sans-serif;
+}

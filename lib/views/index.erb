@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Etsiest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ul class="etsy">
+    <li class="header">
+      <div class="company">Etsy</div>
+      <div class="search"><input id="search-query">
+        <div class="search_button">
+        <button class="the_search_button" type="submit" value="Search">
+        </button>
+        </div>
+      </div>
+      <ul class="top_categories">
+        <li class="top_category">Clothing & Accessories</li>
+        <li class="top_category">Jewelry</li>
+        <li class="top_category">Craft Supplies & Tools</li>
+        <li class="top_category">Weddings</li>
+        <li class="top_category">Entertainment</li>
+        <li class="top_category">Home & Living</li>
+        <li class="top_category">Kids & Baby</li>
+        <li class="top_category">Vintage</li>
+      </ul>
+    </li>
+    <li class="sidebar">
+      <div class="out_of_box"><b>Show results for:</b></div>
+      <div class="in_the_box"><div class="all_cat"><b>All catagories</b></div>
+        <ul class="side_categories">
+          <li class="side_category">Jewelry</li>
+          <li class="side_category">Home & Living</li>
+          <li class="side_category">Art & Collectables</li>
+          <li class="side_category">Bath & Beauty</li>
+          <li class="side_category">Clothing</li>
+          <li class="side_category">Craft Supplies & Tools</li>
+          <li class="side_category">Paper & Party Supplies</li>
+          <li class="side_category">Weddings</li>
+          <li class="side_category">Accessories</li>
+          <li class="side_category">Bags & Purses</li>
+          <li class="side_category">Books, Movies & Music</li>
+          <li class="side_category">Electronics & Accessories</li>
+          <li class="side_category">Shoes</li>
+          <li class="side_category">Toys & Games</li>
+          <li class="side_category">Pet Supplies</li>
+        </ul>
+      </div>
+    </li>
+    <li class="main_content">
+      <div class="main_content_header">Top categories for "<%= params["q"] %>"</div>
+      <ul class="images">
+        <% results.each do |item| %>
+          <li class="img_block">
+            <img src=<%= item["Images"][0]["url_fullxfull"] %> >
+            <div class="img_title"><%= item["title"] %></div>
+            <div class="shop"><%= item["Shop"]["shop_name"] %></div>
+            <div class="price">$<%= item["price"] %></div>
+          </li>
+        <% end %>
+      </ul>
+    </li>
+  </ul>
+</body>
+</html>
