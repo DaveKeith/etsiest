@@ -52,6 +52,7 @@
       <ul class="images">
         <% results.each do |item| %>
           <li class="img_block">
+            <a class="img_link" href=<%= item["url"]%>>
             <img src=<%= item["Images"][0]["url_fullxfull"] %> >
             <div class="img_title"><%= item["title"] %></div>
             <div class="shop"><%= item["Shop"]["shop_name"] %></div>
